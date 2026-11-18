@@ -17,7 +17,7 @@ Abrir `index.html` directamente en el navegador. Para servirlo por HTTP: ejecuta
 - `index.html`: portada en inglés.
 - `es.html`: versión en español.
 - `assets/styles.css`: colores, fuentes, tamaños y diseño.
-- `assets/pecs-2028-logo.jpg`: logo preliminar. Reemplazarlo por una versión definitiva cuando se apruebe.
+- `assets/pecs-2028-logo.png`: logo preliminar corregido. Reemplazarlo por una versión definitiva cuando se apruebe.
 - `assets/config.js`: correo público y enlace de plataforma. Al dejarlos vacíos no se muestran botones activos de contacto o plataforma.
 - `assets/main.js`: navegación móvil y enlaces configurables.
 - `.nojekyll`: indica a GitHub Pages que sirva los archivos estáticos directamente.
@@ -38,5 +38,16 @@ Al aprobarse la plataforma, añadir su URL HTTPS a `conferencePlatformUrl` en `a
 
 ## Dominio propio (opcional)
 Primero comprobar que el comité controla el dominio. Configurarlo en Settings → Pages y añadir los registros DNS que GitHub indique. No se ha creado un archivo CNAME ni se asume acceso a `pecs-conferences.org`. Activar HTTPS cuando GitHub permita hacerlo. No modificar DNS sin autorización.
+
+## Criterio de contenido y derechos
+La portada de http://2018.pecs-conferences.org/ se revisó como referencia funcional de fechas, participación y sede. Este proyecto usa un diseño nuevo, sin copiar imágenes ni código de esa edición. El apartado «History of PECS» conserva el texto histórico aportado por el usuario y su atribución al Prof. J. van de Kreeke; la versión en español incluye una traducción editorial. Confirmar los permisos de reproducción y revisar la traducción antes del lanzamiento definitivo. El logo procede de la página Conference Logo del espacio de trabajo. El comité debe confirmar los derechos y autorizar su publicación. No se impone una licencia pública sobre el logo ni sobre los contenidos.
+
 ## Historia de PECS
 Se añadió «History of PECS» dentro de About en `index.html`, y «Historia de PECS» dentro de Conferencia en `es.html`. El original inglés se conserva íntegro en cinco párrafos, con la autoría en negritas y cursiva. La lista histórica mencionada en el texto no fue proporcionada; una nota editorial lo aclara, sin inventar conferencias, presidentes ni instituciones. Los estilos de este apartado se encuentran al final de `assets/styles.css`.
+
+## Actualización: noticias, pagos y patrocinadores
+- Editar manualmente las tarjetas en `#news` en `index.html` y `es.html`; el tablero no se actualiza automáticamente. Sustituir los textos de próximos anuncios por novedades verificadas y sus fechas.
+- Los pagos internacionales se indican mediante PayPal. No se ha integrado una pasarela ni un enlace de cobro; añadir instrucciones y el enlace oficial únicamente cuando estén disponibles.
+- Completar `#sponsors` con nombres y logotipos autorizados cuando se confirmen los apoyos.
+- Las secciones 05 y 06 tienen banners diferenciados en ambos idiomas. El HTML de inglés parte del archivo index.html entregado; se incorporó el logo corregido previamente para que el subtítulo diga «PECS - 2028». Revisar la versión del logo antes de publicar.
+- Las fechas de noviembre aparecen como propuestas y están sujetas a confirmación.
